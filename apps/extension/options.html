@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>applybot Extension Pairing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="options-body">
+  <div class="options-frame">
+    <div class="mini-topline mini-topline--wide">
+      <span>desktop-assisted apply mode</span>
+      <span>extension pairing</span>
+    </div>
+
+    <div class="options-shell">
+      <header class="popup-header">
+        <div class="brand-lockup">
+          <div class="brand-mark"></div>
+          <div>
+            <p class="brand-kicker">Operations</p>
+            <h1>applybot</h1>
+          </div>
+        </div>
+        <div class="popup-header__meta">
+          <span class="status-pill" id="options-pill">Checking</span>
+        </div>
+      </header>
+
+      <section class="panel panel--hero panel--wide">
+        <div class="panel-heading">
+          <span class="section-label">Desktop Pairing</span>
+        </div>
+        <div class="options-hero">
+          <div>
+            <h2 class="hero-title hero-title--wide">The extension now borrows its brain from the desktop dashboard.</h2>
+            <p class="hero-copy hero-copy--wide">
+              Manage Profile 1, Profile 2, and Profile 3 from the local app, upload and parse resumes there,
+              then let the extension pull the active slot when you autofill live job forms.
+            </p>
+          </div>
+          <div class="hero-glow hero-glow--wide" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="panel panel--wide">
+        <div class="panel-heading">
+          <span class="section-label">Connection Status</span>
+          <span class="signal-dot" aria-hidden="true"></span>
+        </div>
+        <p class="options-status" id="status">Checking for the local desktop app…</p>
+        <div class="reading-grid reading-grid--steps">
+          <div class="reading-card">
+            <span class="reading-label">1. Profiles</span>
+            <span class="reading-value">Create and edit your three profile slots in the dashboard.</span>
+          </div>
+          <div class="reading-card">
+            <span class="reading-label">2. Resume</span>
+            <span class="reading-value">Upload a PDF and review the parsed resume data before saving.</span>
+          </div>
+          <div class="reading-card">
+            <span class="reading-label">3. Autofill</span>
+            <span class="reading-value">Return to a job form and use the popup or keyboard shortcut to fill.</span>
+          </div>
+        </div>
+        <div class="options-actions">
+          <a class="btn-primary btn-link" id="dashboard-link" href="http://localhost:3000/profiles" target="_blank" rel="noreferrer">
+            Open Profiles Dashboard
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -42,6 +42,8 @@ curl http://localhost:8000/health
 ```
 apps/api/       FastAPI backend (routes, services, db, config)
 apps/web/       Next.js dashboard (Pages Router)
+apps/desktop/   Electron shell for local desktop orchestration
+apps/extension/ Chrome extension companion for browser autofill
 docs/           Architecture docs and roadmap
 profiles/       Local-only PII (gitignored)
 ```

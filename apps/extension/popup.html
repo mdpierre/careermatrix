@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>applybot Extension</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="popup-body slot-theme slot-theme--profile-1">
+  <div class="mini-topline">
+    <span>local control surface</span>
+    <span>extension</span>
+  </div>
+
+  <div class="popup-shell">
+    <header class="popup-header">
+      <div class="brand-lockup">
+        <div class="brand-mark"></div>
+        <div>
+          <p class="brand-kicker">Operations</p>
+          <h1>applybot</h1>
+        </div>
+      </div>
+      <div class="popup-header__meta">
+        <span class="status-pill" id="connection-pill">Local</span>
+        <span class="version">v1.0</span>
+      </div>
+    </header>
+
+    <section class="panel panel--hero">
+      <div class="panel-heading">
+        <span class="section-label">Active Profile Slot</span>
+      </div>
+      <div class="hero-row">
+        <div>
+          <h2 class="hero-title" id="slot-display">Profile 1</h2>
+          <p class="hero-copy">
+            Desktop-backed autofill for the current application page.
+          </p>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </div>
+      <div class="track-switcher">
+        <button class="track-btn active" data-track="profile_1">Profile 1</button>
+        <button class="track-btn" data-track="profile_2">Profile 2</button>
+        <button class="track-btn" data-track="profile_3">Profile 3</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <span class="section-label">Loaded Identity</span>
+        <span class="signal-dot" aria-hidden="true"></span>
+      </div>
+      <div class="reading-grid">
+        <div class="reading-card">
+          <span class="reading-label">Profile</span>
+          <span class="reading-value accent" id="target-title">—</span>
+        </div>
+        <div class="reading-card">
+          <span class="reading-label">Resume</span>
+          <span class="reading-value" id="resume-label">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--actions">
+      <button class="btn-primary" id="autofill-btn">Autofill Current Page</button>
+      <button class="btn-secondary" id="edit-btn">Open Desktop Profiles</button>
+    </section>
+
+    <footer class="status-bar">
+      <div>
+        <span class="status-label">Session State</span>
+        <p class="status-caption">Live feedback from the current tab.</p>
+      </div>
+      <span class="status-val ready" id="status-val">Ready</span>
+    </footer>
+  </div>
+
+  <script src="profiles.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
